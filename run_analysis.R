@@ -42,7 +42,7 @@ combinedSet <- merge(combinedSet,labels, by.x="activityid", by.y="activityid" )
 combinedSet <- combinedSet[, grepl("mean\\(\\)|std\\(\\)|subject|activity|activityid",colnames(combinedSet ))]
 
 #group by activity and subject and do mean function on each other column 
-combinedSet <- aggregate(combinedSet[,3:67], by=list(combinedSet$subject,combinedSet$activity,combinedSet$activity), FUN=mean, na.action = na.omit) 
+combinedSet <- aggregate(combinedSet[,3:67], by=list(combinedSet$subject,combinedSet$activity), FUN=mean, na.action = na.omit) 
 write.table(combinedSet,"tidyData.txt",row.name=FALSE)
 combinedSet
 }
