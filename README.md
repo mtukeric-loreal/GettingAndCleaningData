@@ -5,7 +5,7 @@ Unpack package into folder, open folder and set working directory to be extracte
 ../UCI HAR Dataset
 
 Load script run_analysis.R 
-  source("run_analysis.R")
-and run function run_analysis() saving results into variable.
-Example:
-  df <- run_analysis()
+  	source("run_analysis.R")
+and run function 
+	run_analysis() 
+it will save results in working directory under tidyData.txt file and print result in R.

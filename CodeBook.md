@@ -11,5 +11,5 @@ yTrain - list of train activity numbers
 labels - codebook for activity, number and label
 testSet - test observations
 trainSet - train obesrvations
-activity - temp variable used to add activity label into testSet and trainSet
-combinedSet - dataset returned combined of testSet and trainSet grouped by subject and activity and each column presenting mean of values for group
+combinedSet - dataset returned combined of subject, activities and observations in one set.
+	also, this set is aggregated and saved and returned as result
