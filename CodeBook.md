@@ -1,18 +1,30 @@
 libraries used in code: 
+
 tidyr 
+
 dplyr 
+
 readr
 
 
 variables used in code:
+
 features - column names for observations, vector with length of 561 retrivied from features.txt file in raw data
+
 subjectTest - list of test subjects loaded from file subject_test.txt from raw data
+
 subjectTrain - list of train subjects loaded from file subject_train.txt from raw data
+
 yTest - list of test activity numbers loaded from file y_test.txt loaded from raw data
+
 yTrain - list of train activity numbers loaded from file y_train.txt loaded from raw data
+
 labels - codebook for activity, number and label loaded from file activity_labels.txt
+
 testSet - test observations loaded from data x_test.txt
+
 trainSet - train obesrvations loaded from data x_train.txt
+
 combinedSet - dataset returned combined of subject, activities and observations in one set. 
 	set is filtered to containe only columns with std() and mean() in its description of column name and also subject and activity
 	set is gruped based in subject and activity
@@ -35,27 +47,46 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ
+
 tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
+
 tBodyGyroJerk-XYZ
+
 tBodyAccMag
+
 tGravityAccMag
+
 tBodyAccJerkMag
+
 tBodyGyroMag
+
 tBodyGyroJerkMag
+
 fBodyAcc-XYZ
+
 fBodyAccJerk-XYZ
+
 fBodyGyro-XYZ
+
 fBodyAccMag
+
 fBodyAccJerkMag
+
 fBodyGyroMag
+
 fBodyGyroJerkMag
+
 
 The set of variables that were estimated from these signals are: 
 
 mean(): Mean value
+
 std(): Standard deviation
+
 mad(): Median absolute deviation 
 max(): Largest value in array
 min(): Smallest value in array
@@ -84,6 +115,8 @@ tBodyGyroJerkMean
 In final set only columns that had
 
 mean(): Mean value
+
 std(): Standard deviation
+
 
 were used.
